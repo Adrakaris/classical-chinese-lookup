@@ -73,13 +73,13 @@ class Window:
         self.py = Text(base, width=72, height=6, font=("SimSun", 14))
         self.py.grid(row=7, column=0, columnspan=2, sticky=E + W)
 
-        self.l_anc = Label(base, text="[MC] Ancient Chinese", font=("Georgia", 12))
+        self.l_anc = Label(base, text="Middle Chinese", font=("Georgia", 12))
         self.l_anc.grid(row=8, column=0, columnspan=2, sticky=W)
 
         self.anc = Text(base, width=72, height=6, font=("SimSun", 14))
         self.anc.grid(row=9, column=0, columnspan=2, sticky=E + W)
 
-        self.l_anoc = Label(base, text="[OC] Ancient Chinese", font=("Georgia", 12))
+        self.l_anoc = Label(base, text="Old Chinese", font=("Georgia", 12))
         self.l_anoc.grid(row=10, column=0, columnspan=2, sticky=W)
 
         self.anoc = Text(base, width=72, height=6, font=("SimSun", 14))
