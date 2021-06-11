@@ -15,3 +15,5 @@ Enter traditional chinese at the top. *Search* will search the dictionary for al
 Make sure the dictionary csv is in the same folder as the executable.
 
 Technically, all fields are typeable, this is solely to allow copy-paste. Search only looks at the topmost text box.
+
+This project is available for free under the *Creative Commons Attribution-ShareAlike (CC BY-SA 3.0)* license.
