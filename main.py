@@ -59,7 +59,7 @@ def binary_interface(chinese: str) -> List[str]:
     :param chinese: Character to search for
     :return: Entry(s) for that character
     """
-    index: int = binary_search(chinese, 0, len(DICT)-1, DICT)
+    index: int = binary_search(chinese, 0, len(DICT)-1, DICT)  # get index
     
     if index == -1:  # if character not found
         return ["[" + chinese + "]" for _ in range(len(DICT[0]))]
@@ -70,7 +70,7 @@ def binary_interface(chinese: str) -> List[str]:
     offset = 1
     while 0 <= index + offset < len(DICT) and \
             (DICT[index + offset][0] == yuan[0][0] or DICT[index - offset][0] == yuan[0][0]):
-        if DICT[index + offset][0] == yuan[0][0]:
+        if DICT[index + offset][0] == yuan[0][0]:  # search forward and backwards until both hit deads
             yuan.append(DICT[index + offset])
         if DICT[index - offset][0] == yuan[0][0]:
             yuan.append(DICT[index - offset])
@@ -79,7 +79,7 @@ def binary_interface(chinese: str) -> List[str]:
     out: List[str] = []
     for column in zip(*yuan):
         out.append("/".join(column))
-    out[SIMP] = f"[({out[SIMP]})]" if len(out[SIMP]) > 1 else f"[{out[SIMP]}]"
+    out[SIMP] = f"[{out[SIMP][0]}]" if len(out[SIMP]) > 1 else f"[{out[SIMP]}]"
     return out
 
 
