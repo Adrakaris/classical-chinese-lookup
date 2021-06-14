@@ -12,7 +12,7 @@ def read_csv(filename: str) -> List[List[str]]:
     :return: csv entries
     """
     dictionary: List[List[str]] = []
-    with open(filename) as fn:
+    with open(filename, encoding="utf-8") as fn:
         text = reader(fn)
         next(text)  # skip the header
         for ln in text:
