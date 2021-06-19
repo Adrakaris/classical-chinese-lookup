@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+html, body {
+    font-family: "Manrope", "Noto Serif SC", sans-serif ;
+    font-size: 14pt;
+}
+
+.cbox {
+    display: block;
+    width: 90%;
+    max-width: 840px;/*1200px;*/
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lg {
+    font-size: 16pt;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    border-collapse: collapse;
+    border-style: hidden;
+    
+}
+
+table td + td {
+    border-left: 1px solid black;
+    padding: 5px;
+}
+table th + th{
+    border-left: 1px solid black;
+    padding: 5px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+y {
+    font-size: 4pt;
+}
