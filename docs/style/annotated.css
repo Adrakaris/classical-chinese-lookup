@@ -1,0 +1,7 @@
+p {
+    color: darkslategray;
+}
+
+p.exception {
+    color: black;
+}
