@@ -94,6 +94,13 @@ t-cl {
     font-size: 20pt;
 }
 
+r-ind {
+    display: block;
+    font-size: 10pt;
+    text-align: right;
+    margin-right: 10px;
+}
+
 ol.coln {
     -webkit-column-count: 3;
     -moz-column-count: 3;
